@@ -1,7 +1,7 @@
 #include<iostream>
 #include<cstdlib>
 #include<time.h>
-void easy(int radNo);
+void medium(int radNo);
 void hard(int radNo);
 using namespace std;
 int main(){
@@ -11,32 +11,31 @@ int main(){
     radNo = rand()%100 + 1;
     cout<<radNo; 
     cout<<"Difficulty levels: easy(a) "<<endl;
-    cout<<"1. Easy (Hint: Less or greater then 50. 10 Attempts)"<<endl;
-    cout<<"2. Medium (Hint: Multiples of the number. 7 Attempts)"<<endl;
+    cout<<"1. Easy (Hint: Multiples of the number. 7 Attempts)"<<endl;
+    cout<<"2. Medium (Hint: Less or greater then 50. 10 Attempts)"<<endl;
     cout<<"3. Hard (Hint: Number is even or odd. 5 Attempts)"<<endl;
     cout<<"Enter difficulty(according to mentioned above) level you want to play: ";
     cin>>level;
-   
     switch(level) {
   case 1:{
     easy(radNo);
   }
     break;
   case 2:{
-    hard(radNo);
+    medium(radNo);
   }
     break;
-  case 3:
+  case 3:{
+  hard(radNo);
+  }
     break;
   default:{
     cout<<"You did not entered a valid number!!!"<<endl;
-  }
- 
-    
+  }   
  }
  return 0;
 }
-void easy(int radNo){
+void medium(int radNo){
     int unum; 
     if(radNo>50){
         cout<<"Hint: Number is greater then 50"<<endl;
