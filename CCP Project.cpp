@@ -1,3 +1,7 @@
+/*Team iota404: 
+22AIML006 Akshat Borda
+22AIML007 Devershi Dave
+22AIML015 Shivam Jayswal */
 #include<iostream>
 #include<cstdlib>
 #include<time.h>
