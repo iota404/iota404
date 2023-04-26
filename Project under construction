@@ -18,7 +18,7 @@ int main(){
     cin>>level;
     switch(level) {
   case 1:{
-    easy(radNo);
+    //easy(radNo);
   }
     break;
   case 2:{
