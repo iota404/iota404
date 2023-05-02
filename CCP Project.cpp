@@ -134,31 +134,30 @@ void easy(int RandNum){
         }
     } //for loop end //hello
 }
-int PrimeCheck(int n){  //function to check prime number
-    int prime=1;
-    for (int i = 2 ; i < n ; i++) {
-        if (n % i == 0) {
-            prime = 0;
-            break;
-        }
-    }
-    if(prime==1) //returning if prime check is positive
-        return 1;
-    else
-        return 0;
-}
-
+// int PrimeCheck(int n){  //function to check prime number
+//     int prime=1;
+//     for (int i = 2 ; i < n ; i++) {
+//         if (n % i == 0) {
+//             prime = 0;
+//             break;
+//         }
+//     }
+//     if(prime==1) //returning if prime check is positive
+//         return 1;
+//     else
+//         return 0;
+// }
 void factors(int num) {
     int i;
-    if(PrimeCheck(num)){  //calling prime check function in if condition
-        cout<<"\nFactors are: 1 and itself"<<endl;
-    }
-    else{
+//     if(PrimeCheck(num)){  //calling prime check function in if condition
+//         cout<<"\nFactors are: 1 and itself"<<endl;
+//     }
+//     else{
         cout<<"Factors are: ";
         for(i=1; i <= (num); i++) {  //printing factors if the number is not prime
             if (num % i == 0&&i!=num)
                 cout << i << " ";
-        }
+         }
+        cout<<"and itself"<<endl;
         cout<<endl;
-    }
 }
