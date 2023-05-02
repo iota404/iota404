@@ -16,7 +16,7 @@ int main(){
     int radNo,level;
     srand(time(0));
     radNo = rand()%100 + 1;
-    cout<<radNo; 
+    //cout<<radNo; 
     cout<<"\nDifficulty levels: "<<endl;
     cout<<"\n1. Easy (Hint: Multiples of the number. 10 Attempts)"<<endl;
     cout<<"\n2. Medium (Hint: Less or greater then 50. 7 Attempts)"<<endl;
